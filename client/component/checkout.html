@@ -1,0 +1,56 @@
+<div id="checkout-modal" class="checkout-modal">
+  <div class="checkout-content">
+    <div class="checkout-header">
+      <button class="back-button" onclick="backToCart()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <h3 class="header-title">Checkout</h3>
+      <button class="close-checkout">×</button>
+    </div>
+
+    <div class="checkout-form">
+      <div class="form-group">
+        <label for="fullname">Nama Lengkap</label>
+        <input type="text" name="fullname" id="fullname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Nomor Telepon</label>
+        <input type="tel" name="phone" id="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Alamat Pengiriman</label>
+        <textarea name="address" id="address" required></textarea>
+      </div>
+    </div>
+
+    <div class="checkout-summary">
+      <div class="order-summary">
+        <h4>Ringkasan Pesanan</h4>
+        <div id="checkout-items"></div>
+        <div class="checkout-total">
+          Total Pembayaran: <span id="checkout-total-amount">Rp 0</span>
+        </div>
+      </div>
+    </div>
+    <button class="pay-btn">Bayar Sekarang</button>
+  </div>
+</div>
